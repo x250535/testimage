@@ -1,8 +1,5 @@
-FROM alpine:3.4
+FROM sdcpclharbma001.swacorp.com/ubi8/ubi:8.0-154
 MAINTAINER Uday Kiran Domalapally (uday.domalapally@wnco.com)
 
-RUN apk update
-#RUN apk add apache2 \
-#    && php7-apache2 \
-#    && php7-gd \
-#    && php7-mysqli
+RUN yum update
+RUN yum install dnf -y
